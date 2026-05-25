@@ -1,0 +1,10 @@
+# Dependabot config for a notes repo. Only github-actions updates
+# matter here — there are no runtime deps to bump. Keeps any future
+# workflows (link-check, deploy, etc.) current.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 3
